@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: green;
+        }
+        @media (max-width:768px) {
+            body{
+                background-color:blueviolet;
+            }
+            h1{
+                font-size: 45px;
+            }
+        }
+        a{
+            color: black;
+        }
+        nav{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:10px;
+        }
+        .box{
+            border: 1px solid black;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ABOUT US</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contacts</a>
+        <a href="#">Courses</a>
+    </nav>
+    <div class="container">
+        <div class="box">One</div>
+        <div class="box">Two</div>
+        <div class="box">Three</div>
+        <div class="box">Four</div>
+    </div>
+</body>
+</html>
