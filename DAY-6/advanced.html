@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="visits"></p>
+    <script>
+        var v = localStorage.getItem("visits") || 0;
+        v++;
+        localStorage.setItem("visits",v);
+        document.getElementById("visits").textContent = "Total Visit : " + v;
+    </script> -->
+    <!-- <select id="lang">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+    </select>
+    <p id="msg"></p>
+    <script>
+        var sel = document.getElementById("lang");
+        sel.value = localStorage.getItem("lang") || "English";
+        document.getElementById("msg").textContent="Selected : " + sel.value;
+        sel.addEventListener("change",function(){
+            localStorage.setItem("lang",sel.value);
+            location.reload();
+    });
+    </script> -->
+
+
+    <!-- <button onclick="big();">A+</button>
+    <button onclick="small();">A-</button>
+    <p id="text">Somelines</p>
+    <script>
+        var size = localStorage.getItem("size")||16;
+        document.getElementById("text").style.fontSize = size+"px";
+        function big() {
+            size++;
+            save();
+        }
+        function small() {
+            size--;
+            save();
+        }
+        function save(){
+            localStorage.setItem("size",size);
+            document.getElementById("text").style.fontSize = size + "px";
+        }
+    </script> -->
+<!-- 
+    <textarea id="note" placeholder="Write Notes"></textarea>
+    <script>
+        var note = document.getElementById("note");
+        note.value = localStorage.getItem("note") || "";
+        note.addEventListener("input",function(){
+            localStorage.setItem('note',note.value);
+        });
+    </script> -->
+
+</body>
+</html>
