@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body id="theme">
+    <!-- <a id="link" href="https://gprec.ac.in">Open Link</a>
+    <br>
+    <button onclick="changelink()">Change to Google</button>
+    <script>
+        function changelink(){
+            var a = document.getElementById("link");
+            alert("Old href: " +a.getAttribute("href"));
+            a.setAttribute("href","https://google.com");
+            a.textContent = "Open Google";
+        }
+    </script> -->
+<!-- 
+    <input id="btn" placeholder="Enter">
+    <p id="msg"></p>
+    <script>
+        document.getElementById("btn").addEventListener("input",function(){
+            document.getElementById("msg").textContent = "user typing....";
+        });
+    </script> -->
+    <!-- <label>Change BG Color</label>
+    <select id="bgcolor">
+        <option value="">Select</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="orange">Orange</option>
+    </select>
+    <script>
+        document.getElementById("bgcolor").addEventListener("change",function(){
+            document.getElementById("theme").style.backgroundColor = this.value;
+        });
+    </script> -->
+
+    <!-- <h2>Registration Form</h2>
+    <form onsubmit="return validate()">
+        User Name <br>
+        <input type="text" id="username"> <br/> <br/>
+        Password <br>
+        <input type="password" id="pass"><br><br>
+        <input type="submit">
+    </form>
+    <script>
+        function validate(){
+            var username = document.getElementById('username').value;
+            var pass = document.getElementById('pass').value;
+            if(pass.length < 6){
+                alert("Should not less than 6 chars");
+            }
+        }
+    </script> -->
+
+    <!-- <h1>Password Checker</h1>
+    <label>Enter Password</label>
+    <input type="password" id="pass" onkeyup="check()">
+    <p id="res"></p>
+    <script>
+        function check(){
+            let p = document.getElementById("pass").value;
+            let r = document.getElementById('res');
+            if(p.length < 5){
+                r.innerHTML = "Weak";
+                r.style.color = "red";
+            }
+            else if(p.length <= 8){
+                r.innerHTML = "Moderate";
+                r.style.color="orange";
+            }
+            else{
+                r.innerHTML = "Strong";
+                r.style.color="green";
+            }
+        }
+    </script> -->
+    <!-- <h1>Password Checker</h1>
+   <form onsubmit="return check()">
+    Enter Email id: <br>
+    <input type="text"><br>
+    <input type="checkbox" id="terms"> Accept Terms and Conditions <br>
+    <input type="submit">
+   </form>
+    <script>
+        function check(){
+            if(!document.getElementById("terms").checked){
+              alert("Accept terms & conditions");
+              return false;
+            }
+            return true;
+        }
+    </script> -->
+</body>
+</html>

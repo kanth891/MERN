@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Responsive Loading page</title>
+   <style>
+        .body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .head{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 80px;
+        }
+        .navi{
+            margin: 20px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        a{
+            margin-right: 20px;
+        }
+        .brand{
+            border: 1px solid black;
+            color: rgb(2, 161, 2);
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .card{
+            display: flex;  
+        }
+        .intro{
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            background-image: url('download.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 100%;
+            
+        }
+        .intro h1{
+            font-size: 40px;
+        }
+        .intro p{
+            font-size: 20px;
+        }
+        
+        .details{
+            border: 1px solid black;
+            margin-top: -30px;
+            margin-right: 7%;
+            padding: 30px;
+            height: 300px;
+            width: 45%;
+            
+        }
+        .details h2{
+            font-size: 30px;
+        }
+        .intro button{
+            background-color: rgb(0, 38, 255);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .divform{
+            border: 1px solid black;
+            padding: 40px;
+            margin-top: -40px;
+            margin-left: 8%;
+            margin-right: 3%;
+            width: 37%;
+            
+        }
+        .form_heading{
+            
+        }
+   </style>
+</head>
+<body>
+    <div class="head">
+        <div class="brand"><h1>BMI Calculator</h1></div>
+        <nav class="navi">
+            <a href="#">Home</a>
+            <a href="#">Calculator</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+    <section class="intro">
+        <h1>BMI Calculator</h1>
+        <p>Calculate your Body Mass index and Check Your Health</p> 
+    </section>
+        <main class="card">
+            <div class="divform">
+                <form>
+                    <div class="form_heading"><h1>Simple Form</h1></div>
+                    <label>Height:</label>
+                    <br>
+                    <input type="text" id="inp">
+                    <br>
+                    <label>Weight:</label>
+                    <br>
+                    <input type="email" id="email">
+                    <br>
+                    <button onclick="show()">Submit</button>
+                    <br>
+                </form>
+            </div>
+            <div class="details">
+                <h2>Your BMI Result</h2>
+                <ul>
+                    <li>Responsive layouts</li>
+                    <li>Responsive layouts</li>
+                    <li>Responsive layouts</li>
+                    <li>Responsive layouts</li>
+                </ul>
+            </div>
+        </main>
+</body>
+</html>
